@@ -1,0 +1,131 @@
+.container {
+  position: relative;
+  top: -1.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4.125rem;
+  text-align: center;
+  max-width: 66.5rem;
+  width: 90%;
+  background: $adoramaBlue;
+
+  text-align: center;
+  border-radius: $borderRadius;
+
+  @include breakpoint-down(medium) {
+    margin-bottom: 17.9375rem;
+    width: 95%;
+  }
+
+  @include breakpoint-down(small) {
+    width: 96%;
+    margin-bottom: 10rem;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.375rem 3.75rem;
+    font-size: 1.3125rem;
+    color: $white;
+
+    @include breakpoint-down(medium) {
+      padding: 0.9375rem 1.8125rem;
+      font-size: 0.9375rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 0.875rem;
+      padding: 0 30px;
+      color: $fontBlack;
+      background: $greyBorder;
+      padding-top: 60px;
+
+      border-top-left-radius: $borderRadius;
+      border-top-right-radius: $borderRadius;
+    }
+
+    @include breakpoint-down(mobile) {
+      text-transform: lowercase;
+      line-height: 1.5;
+    }
+
+    :first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__footer {
+    height: 9.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
+
+    @include breakpoint-down(small) {
+      padding: 20px 16px;
+      height: 7.25rem;
+    }
+    p {
+      font-size: 30px;
+      padding: 36px 28px 45px 24px;
+
+      @include breakpoint-down(medium) {
+        font-size: 1.3125rem;
+        padding: 1.5625rem 1.3125rem;
+        padding-top: 2rem;
+      }
+
+      @include breakpoint-down(small) {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+      }
+
+      @include breakpoint-down(mobile) {
+        padding: 1rem 0rem;
+      }
+    }
+
+    button {
+      background: $buttonColor;
+      border-radius: $buttonRadius;
+      border: none;
+      color: $white;
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      padding: $buttonPadding;
+      min-width: 400px;
+      width: 400px;
+      height: 60px;
+      justify-content: center;
+      align-items: center;
+
+      margin-right: 1.625rem;
+
+      cursor: pointer;
+
+      @include breakpoint-down(medium) {
+        padding: 1rem 6.25rem;
+        margin: 0rem;
+        margin-bottom: 2rem;
+        width: 50%;
+        height: 48px;
+        font-size: 20px;
+      }
+
+      @include breakpoint-down(small) {
+        font-size: 1rem;
+        padding: 1rem 3.0625rem;
+        margin-bottom: 1rem;
+        min-width: 220px;
+        width: 220px;
+        height: 36px;
+      }
+    }
+  }
+}
