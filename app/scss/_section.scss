@@ -22,9 +22,13 @@
     border-top-right-radius: $borderRadius;
 
     @include breakpoint-down(small) {
-      margin-bottom: 0rem;
       border-bottom-left-radius: $borderRadius;
       border-bottom-right-radius: $borderRadius;
+      margin-bottom: 0rem;
+    }
+
+    @include breakpoint-down(mobile){
+      margin-bottom: 16px;
     }
 
     .gift-basket,
@@ -38,13 +42,17 @@
       }
 
       @include breakpoint-down(small) {
-        padding: 1rem;
+        padding-bottom: 1rem;
       }
     }
 
     .gift-basket {
       margin-left: 3px;
       border-radius: 0 9px 0 0;
+
+      @include breakpoint-down(medium) {
+        border-radius: 0 9px 9px 0;
+      }
 
       @include breakpoint-down(smallmed) {
         padding: 20px 0px;
@@ -59,6 +67,10 @@
     .credit-card {
       margin-right: 3px;
       border-radius: 9px 0 0 0;
+
+      @include breakpoint-down(medium) {
+        border-radius: 9px 0 0 9px;
+      }
     }
 
     img {
@@ -71,8 +83,9 @@
         width: 5.5731rem;
       }
       @include breakpoint-down(small) {
-        height: 2.5137rem;
-        width: 2.4925rem;
+        padding-top: 0px;
+        height: 35.75px;
+        width: 44.1px;
       }
     }
 
@@ -150,17 +163,19 @@
       width: 5rem;
 
       @include breakpoint-down(medium) {
+        height: 3rem;
+        width: 4rem;
       }
     }
 
     p {
-      margin-top: 1.2rem;
+      margin-top: 1rem;
       font-size: $defaultFont;
       grid-column: 1 / 2;
       grid-row: 2 / 3;
 
       @include breakpoint-down(medium) {
-        margin-top: 1.5625rem;
+        margin-top: 1rem;
 
         font-size: 1rem;
       }

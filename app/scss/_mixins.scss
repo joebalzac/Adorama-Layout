@@ -10,15 +10,12 @@ $breakpoints-up: (
   "xlarge": "100.0625em",
 );
 
-// 320px, 599px, 663px, 780px, 800px, 1080px, 1128px  1600px
+// 320px, 599px, 800px, 1020px, 1128px, 1600px
 $breakpoints-down: (
-  "mobile": "20em",
-  "small": "37.4375rem",
-  "smallmed": "41.375",
-  "medium": "48.75em",
-  "medium3": "50.0625rem",
-  "medium2": "54.375rem",
-  "medlrg": "67.5em",
+  "mobile": "320px",
+  "small": "599px",
+  "medium": "800px",
+  "medlrg": "1100px",
   "large": "70.5rem",
   "xlarge": "100em",
 );
